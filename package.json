@@ -2,7 +2,7 @@
   "name": "mentor-app-form-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "./index.html",
   "dependencies": {
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
