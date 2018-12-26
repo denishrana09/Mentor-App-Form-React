@@ -1,15 +1,19 @@
 .FormContent{
-    margin-top: 40px;
+    margin-top: 30px;
+    z-index: 11;
     .active{
         padding: 10px;
         box-shadow: 0px 0px 10px #888888;
         transform: scale(1.08);
     }
+    .Hide{
+        display: none;
+    }
     .Form-Header-Col{
         padding: 30px;
-        margin-top: 15px;
         .Form-Group{
             padding-top: 12%;
+            margin-bottom: 0;
             .Form-Label{
                 font-weight: 600;
                 font-size: 18px;
@@ -32,11 +36,63 @@
                 margin-right: 10px;
                 border-bottom: 1px solid rgb(192, 192, 192);
             }
-            .Gender-Radio{
-                margin: 5px;
-                .Radio-Name{
-                    font-size: 15px;
-                }
+            .Gender-Label{
+                margin-bottom: 5px;
+            }
+            .Radio-Name{
+                font-size: 15px;
+            }
+        }
+        .First-Error{
+            color: red;
+        }
+        .Last-Error{
+            color: red;
+        }
+        .Class-Error{
+            color: red;
+        }
+        .Number-Error{
+            color: red;
+        }
+        .Mail-Error{
+            color: red;
+        }
+        .Region-Error{
+            color: red;
+        }
+        .Street-Error{
+            color: red;
+        }
+        .Link-Error{
+            color: red;
+        }
+        .Date-Class-Error{
+            color: red;
+        }
+        .Gender-Class-Error{
+            color: red;
+        }
+        .Program-Class-Error{
+            color: red;
+        }
+        .Form-Button{
+            color: white;
+            float: right;
+            padding: 3px 20px;
+            margin-top: 20px;
+            font-size: 13px;
+            margin-right: 10px;
+            box-shadow: none;
+            border-color: none;
+            border: none;
+            background-image: linear-gradient(to bottom,#10E5F1 0,#52B2F5 100%);
+            text-shadow: none;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            &:hover{
+                background-color: rgb(28, 146, 230);
+                background-position: 0 -30px;
             }
         }
     }
@@ -46,14 +102,32 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-
+@media (min-width: 481px) and (max-width: 768px) {
+    .FormContent{
+        .non-active{
+            display: none;
+        }
+        .active{
+            display: block !important;
+            width: 90%;
+            margin-left: 5%;
+            padding-bottom: 50px;
+        }
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+    .FormContent{
+        .non-active{
+            display: none;
+        }
+        .active{
+            display: block !important;
+            padding-bottom: 50px;
+        }
+    }
 }

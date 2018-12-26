@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FormHeader from './Components/FormHeader';
 import FormContent from './Components/FormContent';
+import BgImage from './Images/bg.jpg';
 
 class App extends Component {
   constructor(props){
@@ -15,7 +16,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+    <div className="AppParent" style={{backgroundImage: `url(${BgImage})`,
+      backgroundSize:"cover",minHeight:"100vh"}}>
+      <div className="App-Heading"><h1>Mentor Application Form</h1></div>
+      <div className="container App">
         <FormHeader
           activeClass={this.state.activeClass}
           onActiveClassChange={this.handleActiveClassChange}
@@ -24,6 +28,7 @@ class App extends Component {
           activeClass={this.state.activeClass}
         />
       </div>
+    </div>
     );
   }
 }

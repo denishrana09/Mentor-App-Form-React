@@ -1,3 +1,34 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+.AppParent{
+    padding: 60px;
+    .App-Heading{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: rgb(253, 253, 253);
+    }
+    .App{
+        background-color: white;
+        border-radius: 10px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .AppParent{
+        padding: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .AppParent{
+        padding: 20px;
+    }
+}
