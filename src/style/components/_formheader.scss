@@ -16,8 +16,17 @@
             font-size: 8px;
             border: 1px solid #777;
             border-radius: 50px;
-            padding: 3px;
+            padding: 5px;
             color: #777;
+        }
+    }
+    .active{
+        .Form-Header-Text{
+            color: rgb(87, 162, 236);
+        }
+        i{
+            color: #77B4EF;
+            border: 1px solid #77B4EF;
         }
     }
 }
