@@ -1,0 +1,59 @@
+.FormContent{
+    margin-top: 40px;
+    .active{
+        padding: 10px;
+        box-shadow: 0px 0px 10px #888888;
+        transform: scale(1.08);
+    }
+    .Form-Header-Col{
+        padding: 30px;
+        margin-top: 15px;
+        .Form-Group{
+            padding-top: 12%;
+            .Form-Label{
+                font-weight: 600;
+                font-size: 18px;
+                margin: 0;
+                display: block;
+            }
+            .Form-Control{
+                padding: 0;
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                border-bottom: 1px solid rgb(175, 175, 175);
+                border-radius: 0;
+            }
+            .Date{
+                padding: 0;
+                width: auto;
+                display: inline-block;
+                border: 0;
+                margin-right: 10px;
+                border-bottom: 1px solid rgb(192, 192, 192);
+            }
+            .Gender-Radio{
+                margin: 5px;
+                .Radio-Name{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+}

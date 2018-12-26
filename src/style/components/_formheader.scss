@@ -1,0 +1,81 @@
+.FormHeader{
+    margin-top: 20px;
+    text-align: center;
+    .Form-Header-Col{
+        .Form-Header-Text{
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .line{
+            border-top:1px solid gray;
+            width:100%;
+            margin-left: 55%;
+            margin-top: -8px;
+        }
+        i{
+            font-size: 8px;
+            border: 1px solid #777;
+            border-radius: 50px;
+            padding: 3px;
+            color: #777;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .Form-Header-Col{
+        .line{
+            border-top:1px solid gray;
+            width:100%;
+            margin-left: 55%;
+            margin-top: -8px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .FormHeader{
+        .Form-Header-Col{
+            .line{
+                border-top:1px solid gray;
+                width:100%;
+                margin-left: 57%;
+                margin-top: -8px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .FormHeader{
+        .Form-Header-Col{
+            .Form-Header-Text{
+                font-weight: 700;
+                font-size: 15px;
+            }
+            .line{
+                border-top:1px solid gray;
+                width:100%;
+                margin-left: 65%;
+                margin-top: -8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .FormHeader{
+        .Form-Header-Col{
+            .line{
+                border-top:1px solid gray;
+                width:100%;
+                margin-left: 73%;
+                margin-top: -8px;
+            }
+        }
+    }
+}
