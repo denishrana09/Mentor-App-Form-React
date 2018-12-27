@@ -42,6 +42,66 @@
             .Radio-Name{
                 font-size: 15px;
             }
+            .Custom-Radio {
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 6px;
+                cursor: pointer;
+                font-size: 15px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+
+                .checkmark:after {
+                  top: 9px;
+                  left: 9px;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  background: #4097E8;
+                }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                }
+
+                &:hover input ~ .checkmark {
+                  background-color: #ccc;
+                }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                }
+
+                input:checked ~ .checkmark {
+                  background-color: #4097E8;
+                }
+
+                input:checked ~ .checkmark:after {
+                  display: block;
+                }
+                .checkmark {
+                    position: absolute;
+                    top: 3px;
+                    left: 0;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #eee;
+                    border-radius: 50%;
+                }
+            }
         }
         .First-Error{
             color: red;

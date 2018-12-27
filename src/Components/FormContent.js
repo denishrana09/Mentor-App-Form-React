@@ -41,8 +41,8 @@ class FormContent extends Component {
 		let stError = this.state.stError;
 		if(!fnError || !lnError || !clError || !liError || !phError || !maError || !reError || !stError){
 			this.setState({mainError: true});
-			console.log(this.state.mainError);
-			console.log("errrrrooor");
+			//console.log(this.state.mainError);
+			//console.log("errrrrooor");
 		}
 	}
 
@@ -52,13 +52,13 @@ class FormContent extends Component {
 		if(pattern.test(first)===false){
 			// document.getElementById('firstNameInput').classList.add("error");
 			// document.getElementById('firstNameError').innerHTML = "No spacial characters allowed";
-			console.log("firstname error");
+			//console.log("firstname error");
 			this.setState({fnameError:true});
 		}
 		else{
 			// document.getElementById('firstNameInput').classList.remove("error");
 			// document.getElementById('firstNameError').innerHTML = " ";
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({fnameError:false,fname:first});
 		}
 	}
@@ -67,11 +67,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let last = e.target.value;
 		if(pattern.test(last)===false){
-			console.log("lastname error");
+			//console.log("lastname error");
 			this.setState({lnameError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({lnameError:false,lname:last});
 		}
 	}
@@ -80,11 +80,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("gender error");
+			//console.log("gender error");
 			this.setState({genderError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({genderError:false,gender:first});
 		}
 	}
@@ -93,11 +93,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("class error");
+			//console.log("class error");
 			this.setState({classError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({classError:false,class:first});
 		}
 	}
@@ -106,11 +106,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("program error");
+			//console.log("program error");
 			this.setState({programError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({programError:false,program:first});
 		}
 	}
@@ -119,11 +119,11 @@ class FormContent extends Component {
 		var pattern= /^(http[s]?:\/\/)?([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2}(\/([-~%\.\(\)\w\d]*\/*)*(#[-\w\d]+)?)?$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("Link error");
+			//console.log("Link error");
 			this.setState({linkError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({linkError:false,link:first});
 		}
 	}
@@ -132,11 +132,11 @@ class FormContent extends Component {
 		var pattern = /^[0-9]{10}$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("Phone error");
+			//console.log("Phone error");
 			this.setState({phoneError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({phoneError:false,phone:first});
 		}
 	}
@@ -145,11 +145,11 @@ class FormContent extends Component {
 		let pattern = /^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("Mail error");
+			//console.log("Mail error");
 			this.setState({emailError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({emailError:false,email:first});
 		}
 	}
@@ -158,11 +158,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("Region error");
+			//console.log("Region error");
 			this.setState({regionError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({regionError:false,region:first});
 		}
 	}
@@ -171,11 +171,11 @@ class FormContent extends Component {
 		let pattern=/^([- \w\d\u00c0-\u024f]+)$/;
 		let first = e.target.value;
 		if(pattern.test(first)===false){
-			console.log("Street error");
+			//console.log("Street error");
 			this.setState({streetError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({streetError:false,street:first});
 		}
 	}
@@ -183,11 +183,11 @@ class FormContent extends Component {
 	handleDDChange(e){
 		let first = e.target.value;
 		if(first === "-1"){
-			console.log("DD error");
+			//console.log("DD error");
 			this.setState({ddError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({ddError:false,dd:first});
 		}
 	}
@@ -195,11 +195,11 @@ class FormContent extends Component {
 	handleMMChange(e){
 		let first = e.target.value;
 		if(first === "-1"){
-			console.log("MM error");
+			//console.log("MM error");
 			this.setState({mmError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({mmError:false,mm:first});
 		}
 	}
@@ -207,11 +207,11 @@ class FormContent extends Component {
 	handleYYChange(e){
 		let first = e.target.value;
 		if(first === "-1"){
-			console.log("YY error");
+			//console.log("YY error");
 			this.setState({yyError:true});
 		}
 		else{
-			console.log("no problem");
+			//console.log("no problem");
 			this.setState({yyError:false,yy:first});
 		}
 	}
@@ -381,7 +381,37 @@ class FormContent extends Component {
 								placeholder="Enter Your Class" onBlur={this.handleClassChange}/>
 						</FormGroup>
 						<div className={Class}>Class is Required</div>
+
 						<FormGroup className="Form-Group" onBlur={this.handleProgramChange}>
+							<div>
+								<h4 style={{fontWeight:"600"}}>Program</h4>
+							</div>
+							<label className="Custom-Radio">Graphic & Web Design
+								<input type="radio" name="radio" value="graphics"/>
+								<span className="checkmark"></span>
+							</label>
+							<label className="Custom-Radio">Digital Marketing
+								<input type="radio" name="radio" value="digital"/>
+								<span className="checkmark"></span>
+							</label>
+							<label className="Custom-Radio">System Administration
+								<input type="radio" name="radio" value="system"/>
+								<span className="checkmark"></span>
+							</label>
+							<label className="Custom-Radio">Programming
+								<input type="radio" name="radio" value="programming"/>
+								<span className="checkmark"></span>
+							</label>
+							<label className="Custom-Radio">MS Office
+								<input type="radio" name="radio" value="msoffice"/>
+								<span className="checkmark"></span>
+							</label>
+							<label className="Custom-Radio">3D Modeling
+								<input type="radio" name="radio" value="3dModeling"/>
+								<span className="checkmark"></span>
+							</label>
+						</FormGroup>
+						{/* <FormGroup className="Form-Group" onBlur={this.handleProgramChange}>
 							<div>
 								<h4 style={{fontWeight:"600"}}>Program</h4>
 							</div>
@@ -403,7 +433,7 @@ class FormContent extends Component {
 							<Radio className="Radio-Group" value="3d" name="radioGroup">
 								3D Modeling
 							</Radio>
-						</FormGroup>
+						</FormGroup> */}
 						<div className={ProgramClass}>Select perticualr Program</div>
 						<FormGroup className="Form-Group" controlId="formLink">
 							<ControlLabel className="Form-Label">Link</ControlLabel>
@@ -412,7 +442,7 @@ class FormContent extends Component {
 								placeholder="https://"
 								onBlur={this.handleLinkChange}/>
 						</FormGroup>
-						<div className={Link}>Link is Required</div>
+						<div className={Link}>Enter Correct Link</div>
 					</Col>
 					<Col className={class3} sm={4}>
 						<FormGroup className="Form-Group" controlId="formPhone">
